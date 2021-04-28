@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    color: rgb(95, 95, 95);
+    font-family: source sans pro;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(6, 205, 219);
+}
+#container-topo {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home img {
+   width: 100px;
+}
+
+#home a {
+    text-decoration: none;
+}
+
+#container-menu-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#container-menu-nav ul li{
+    padding-left: 15px;
+}
+
+#container-menu-nav a {
+    text-decoration: none; 
+    color: white;
+}
+
+#container-menu-nav a:hover {
+    color: black;
+}
+
+#banner img {
+    width: 1263px;
+}
+
+#slogan {
+    width: 1024px;
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 26px;
+    position: absolute;
+    bottom: 170px;
+    left: 120px;
+}
+
+#slogan h1 {
+    width: 650px;
+}
+
+#sobre-container-principal {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#sobre-parte-1 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sobre-parte-2 {
+    height: 250px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 30px;
+}
+
+#sobre-parte-2 h3 {
+    text-align: left;
+    position: relative;
+    top: 20px;
+}
+#sobre-parte-2 ul {
+    position: relative;
+    float: right;
+    top: 20px;
+    text-align: left;
+    right: 20px;
+}
+
+#sobre-parte-2 img {
+    position: relative;
+    float: left;
+}
+
+#especialidades-container-principal {
+    width: 1024px;
+    height: 460px;
+    margin-top: 85px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#apresentacao-especialidades-parte-1 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#apresentacao-especialidades-parte-2 {
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+.card-especialidade {
+    width: 290px;
+    height: 220px;
+    border-radius: 3px;
+    margin-top: 40px;
+    box-shadow: 2px 2px 5px;
+}
+
+.card-especialidade img {
+    width: 290px;
+    height: 180px;
+}
+
+.card-especialidade p {
+    position: relative;
+    bottom: 10px;
+}
+
+#ver-horarios {
+    background-color: rgb(6, 205, 219);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 190px;
+    width: 150px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#ver-horarios-link {
+    text-decoration: none;
+    color: white;
+}
+
+#limitador-section-final {
+    height: 460px;
+}
+
+#contato-e-endereco {
+    position: relative;
+    bottom: 00px;
+    text-align: center;
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+#iframe {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+iframe {
+    width: 95vw;
+    height: 400px;
+}
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: right;
+    background-color: rgb(6, 205, 219);
+    height: 250px;
+    margin-top: 70px;
+}
+
+footer img {
+    width: 115px;
+    height: 65px;
+}
+
+#conteudo-footer {
+    position: relative;
+    bottom: 10px;
+    color: white;
+    width: 1024px;
+    height: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#conteudo-footer p {
+    height: 15px;
+    margin-bottom: 0px;
+}
+
+#conteudo-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#conteudo-footer a:visited {
+    color: white;
+}
+
+#conteudo-footer a:hover {
+    color: orange;
+}

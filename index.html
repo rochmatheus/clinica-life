@@ -9,22 +9,24 @@
 </head>
 <body>
     <header>
-        <div id="home"> <a href="index.html">CM<img src="imagens/logo2.png" alt=""> <span>Life</span></a></div>
-        <div>
-            <nav>
-                <ul>
-                    <li> <a href="#sobre">Sobre</a></li>
-                    <li><a href="especialidades.html">Especialidades</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+        <div id="container-topo">
+            <div id="home"> <a href="index.html"> <img src="imagens/logo.png" alt="logo clínica"></a></div>
+            <div id="container-menu-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#sobre-container-principal">Sobre</a></li>
+                        <li><a href="especialidades.html">Especialidades</a></li>
+                        <li><a href="#limitador-section-contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <section id="banner">
             <img src="imagens/recepcao.png" alt="imagem da clínica">
             <div id="slogan">
-                <h1>CLÍNICA MÉDICA LIFE AQUI A GENTE CUIDA DE VOCÊ</h1>
+                <h1>CLÍNICA MÉDICA LIFE<br>AQUI A GENTE CUIDA DE VOCÊ</h1>
             </div>
     </section>
 
@@ -50,48 +52,49 @@
     
     <section id="especialidades-container-principal">
         <div id="apresentacao-especialidades-parte-1">
-            <h3>Uma clínica de multiespecialidades</h3>
+            <h3>UMA CLÍNICA DE MULTIESPECIALIDADES</h3>
             <p>Nossa clínica possui diversas especialidades como ortopedia, pediatria, geriatria, psicologia, fisioterapias, entre outras.</p>
         </div>
         <div id="apresentacao-especialidades-parte-2">
-            <div>
-                <figure>
-                    <img src="imagens/ortopedia1.png" alt="Ortopedia">
-                    <figcaption>Ortopedia</figcaption>
-                </figure>
+            <div class="card-especialidade"> 
+                <img src="imagens/ortopedia.png" alt="ortopedia">
+                <p>Ortopedia</p>
+            </div>   
+
+            <div class="card-especialidade">
+                <img src="imagens/pediatra.png" alt="pediatria">
+                <p>Pediatria</p>               
             </div>
 
-            <div>
-                <figure>
-                    <img src="imagens/pediatra2.png" alt="Pediatria">
-                    <figcaption>Pediatria</figcaption>
-                </figure>
-            </div>
-
-            <div>
-                <figure>
-                    <img src="imagens/geriatra.png" alt="Geriatria">
-                    <figcaption>Geriatria</figcaption>
-                </figure>
+            <div class="card-especialidade">
+                <img src="imagens/geriatra.png" alt="Geriatria">
+                <p>Geriatria</p>    
             </div>
         </div>
 
-        <div id="ver-horarios"><a href="">HORÁRIOS</a></div>
+        <a id="ver-horarios-link" href=""><div id="ver-horarios">VER HORÁRIOS</div></a>
     </section>
 
-    <section id="contato-e-endereco">
-        <h3>Contato e Endereço</h3>
-        <p>Nossa clínica médica está aberta de segunda a sábado das 6:00 ás 21:00.</p>
-        <p>Através do telefone/WhatsApp (021) 00000-000 você pode fazer o agendamento de consultas e exames.</p>
-        <p>Estamos localizados no estacionamento do Via Parque Shopping - Av. Ayrton Senna, 3000 - barra da Tijuca, Rio de Janeiro</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14692.471710812997!2d-43.3641911!3d-22.9826906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x539cb07246f0e38d!2sVia%20Parque%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1619410190742!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section id="limitador-section-contato">
+        <div id="contato-e-endereco"><h3>CONTATO E ENDEREÇO</h3>
+            <p>Nossa clínica médica está aberta de segunda <strong>a sábado das 6:00 ás 21:00.</strong></p>
+            <p>Através do telefone/WhatsApp <strong>(021) 00000-000</strong> você pode fazer o agendamento de consultas e exames.</p>
+            <p>Estamos localizados no estacionamento do Via Parque Shopping - <strong>Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro.</strong></p>
+        </div>
+        <div id="iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14692.471710812997!2d-43.3641911!3d-22.9826906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x539cb07246f0e38d!2sVia%20Parque%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1619410190742!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </section>
 
     <footer>
-        <img src="imagens/logo.png" alt="logo">
-        <p>Telefone e WhatsApp: (21) 00000-0000</p>
-        <p>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
-        <p>&copy;2020 Clínica Médica Life - Todos Os Direitos Reservados</p>
+        <div id="conteudo-footer">
+            <img src="imagens/logo.png" alt="logo">
+            <p>Telefone e WhatsApp: (21) 00000-0000</p>
+            <p>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
+            <p>&copy;2020 Clínica Médica Life - Todos os Direitos Reservados</p> 
+            <p>Desenvolvido por <a href="https://github.com/rochmatheus" target="_blank">Matheus S. Rocha</a</p>
+        </div>
     </footer>
+
 </body>
 </html>
