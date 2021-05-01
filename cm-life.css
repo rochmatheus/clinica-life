@@ -42,21 +42,16 @@ header {
     color: black;
 }
 
-#banner img {
+#banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
-}
-
-#slogan {
-    width: 1024px;
+    height: 500px;
+    background-image: url(imagens/recepcao.png);
+    background-size: cover;
+    font-size: 32px;
     color: rgba(255, 255, 255, 0.726);
-    font-size: 26px;
-    position: absolute;
-    bottom: 170px;
-    left: 120px;
-}
-
-#slogan h1 {
-    width: 650px;
 }
 
 #sobre-container-principal {
@@ -234,7 +229,11 @@ footer img {
 
 @media (max-width: 1024px) {
     body {width: 100%;}
-    
+    #slogan {width: 500px;}
+    #sobre-container-principal {width: 100%;}
+    #especialidades-container-principal {width: 100%;}
+    #contato-e-endereco {width: 100%;}
+    #conteudo-footer {width: 100%;}
 }
 
 @media (max-width: 768px) {
