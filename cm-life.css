@@ -232,74 +232,15 @@ footer img {
     color: orange;
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
-    header {width: 100%;}
-    #container-topo {display: flex; justify-content: space-around;}
-    #banner {height: 400px; width: 100%;}
-    #banner img {height: 400px; }
-    #slogan {display: relative; width: 800px; bottom: 240px; left: 40px;}
-    #sobre-container-principal {width: 100%;}
-    #especialidades-container-principal {width: 100%}
-    #apresentacao-especialidades-parte-2 {display: flex; justify-content: space-around;}
-    #contato-e-endereco {width: 100%;}
-    footer {width: 100%;}
-    #conteudo-footer {width: 100%;}
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    header {width: 100%}
-    #container-topo {display: flex; justify-content: space-around;}
-    #banner {height: 400px; width: 100%}
-    #banner img {height: 400px; width: 100%}
-    #slogan {display: relative; width: 600px; bottom: 240px; left: 40px;}
-    #slogan h1 {font-size: 36px;}
-    #sobre-container-principal {width: 100%; height: 350px;}
-    #sobre-parte-2 ul {position: relative; float: none; top: 35px; left: 15px;}
-    #especialidades-container-principal {width: 100%; height: 715px;}
-    #apresentacao-especialidades-parte-2 {display: flex; justify-content: space-around;}
-    #ver-horarios {position: relative; top: 60px;}
-    #contato-e-endereco {width: 100%;}
-    footer {width: 100%; margin-top: 25px; height: 220px;}
-    #conteudo-footer {width: 100%;}
-}
-
-@media (min-width: 597px) and (max-width: 768px) {
-    header {width: 100%}
-    #container-topo {display: flex; justify-content: space-around;}
-    #banner {height: 300px;}
-    #banner img {height: 300px; width: 100%;}
-    #slogan {display: relative; width: 400px; bottom: 290px; left: 20px;}
-    #slogan h1 {font-size: 26px; width: 400px;}
-    #sobre-container-principal {width: 100%; height: 360px;}
-    #sobre-parte-1 {position: relative; top: 20px;}
-    #sobre-parte-2 img {display: none;}
-    #sobre-parte-2 h3 {text-align: center;}
-    #sobre-parte-2 ul {width: 370px; position: relative; float: none;}
-    #especialidades-container-principal {width: 100%; height: 700px; margin-top: 0px;}
-    #apresentacao-especialidades-parte-1 {margin-top: 35px;}
-    #apresentacao-especialidades-parte-2 {display: flex; justify-content: space-around;}
-    #ver-horarios {position: relative; top: 50px;}
-    #limitador-section-contato {position: relative; top: 0px; height: 460px;}
-    #contato-e-endereco {width: 100%;}
-    #iframe {height: 300px;}
-    iframe {height: 300px;}
-    footer {margin-top: 25px; width: 100%; height: 220px;}
-    #conteudo-footer {width: 100%; height: 220px;}
-}
-
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
+    body {width: 100%;}
     
-    #banner {height: 250px;}
-    #banner img {height: 250px;}
-    #slogan {display: relative; width: 400px; bottom: 310px; left: 20px;}
-    #slogan h1 {font-size: 26px; width: 400px;}
-    #sobre-container-principal {width: 100%;}
-    #sobre-parte-2 img {display: none;}
-    #sobre-parte-2 h3 {text-align: center;}
-    #especialidades-container-principal {width: 100%; height: 1000px;}
-    #apresentacao-especialidades-parte-2 {display: flex; justify-content: space-around;}
-    #ver-horarios {position: relative; top: 300px;}
-    #contato-e-endereco {width: 100%; position: relative; bottom: 20px;}
-    footer {margin-top: 10px; width: 100%; height: 220px;}
-    #conteudo-footer {width: 100%; height: 220px;}
+}
+
+@media (max-width: 768px) {
+    body {width: 100%;}
+}
+
+@media (max-width: 425px) {
+    body {width: 100%;}
 }
