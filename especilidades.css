@@ -176,3 +176,11 @@ footer img {
 @media (max-width: 867px) {
     .imagem-especialidade {display: none;}
 }
+
+@media (max-width: 432px) {
+    #conteudo-footer p {text-align: center; height: 30px;}
+}
+
+@media (max-width: 410px) {
+    #container-especialidades-links {display: flex; flex-flow: row wrap;}
+}
