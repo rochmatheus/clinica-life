@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(95, 95, 95);
+    font-family: source sans pro;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(6, 205, 219);   
+}
+
+#home img {
+   width: 100px;
+   position: relative;
+   left: -180px;
+}
+
+#home a {
+    text-decoration: none;
+}
+
+#container-menu-nav ul {
+    list-style-type: none;
+    position: relative;
+    right: -180px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#container-menu-nav ul li{
+    padding-left: 15px;
+}
+
+#container-menu-nav a {
+    text-decoration: none; 
+    color: white;
+}
+
+#container-menu-nav a:hover {
+    color: black;
+}
+
+#container-especialidades-links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    height: 70px; 
+}
+
+.links-especialidades {
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 10px;
+    border-bottom: solid rgb(6, 205, 219);
+}
+
+.links-especialidades:visited {
+    color: rgb(95, 95, 95);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.titulo-especialidade {
+    text-align: center;
+}
+
+.descricao-especialidade {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagem-especialidade {
+    width: 300px;
+    height: 200px;
+}
+
+.container-imagem-e-tabela {
+    display: flex;
+    width: 75%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabela-especialidade {
+    width: 100%;
+    height: 200px;
+    border-style: none;
+}
+
+th {
+    color: white;
+    background-color: rgb(6, 205, 219);
+    text-align: left;
+    padding-left: 5px;
+}
+
+tr {
+    height: 48px;
+}
+
+tbody td {
+    padding-left: 5px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(192, 190, 190);
+}
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: right;
+    background-color: rgb(6, 205, 219);
+    width: 100%;
+    height: 250px;
+    margin-top: 70px;
+}
+
+footer img {
+    width: 115px;
+    height: 65px;
+}
+
+#conteudo-footer {
+    position: relative;
+    bottom: 10px;
+    color: white;
+    width: 1024px;
+    height: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#conteudo-footer p {
+    height: 15px;
+    margin-bottom: 0px;
+}
+
+#conteudo-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#conteudo-footer a:visited {
+    color: white;
+}
+
+#conteudo-footer a:hover {
+    color: orange;
+}
