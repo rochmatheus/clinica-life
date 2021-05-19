@@ -8,14 +8,14 @@ body {
 header {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgb(6, 205, 219);   
 }
 
 #home img {
    width: 100px;
    position: relative;
-   left: -180px;
+   left: 10px;
 }
 
 #home a {
@@ -25,7 +25,7 @@ header {
 #container-menu-nav ul {
     list-style-type: none;
     position: relative;
-    right: -180px;
+    right: 10px;
     display: flex;
     flex-flow: row wrap;
 }
@@ -93,10 +93,18 @@ h2 {
     margin-right: auto;
 }
 
-.tabela-especialidade {
+.tabela-especialidade, .tabela-especialidade-cinco-linhas, .tabela-especialidade-seis-linhas {
     width: 100%;
     height: 200px;
-    border-style: none;
+    border-spacing: 0px;
+}
+
+.tabela-especialidade-cinco-linhas tr {
+    height: 42px;
+}
+
+.tabela-especialidade-seis-linhas tr{
+    height: 30px;
 }
 
 th {
@@ -137,7 +145,7 @@ footer img {
     position: relative;
     bottom: 10px;
     color: white;
-    width: 1024px;
+    width: 100%;
     height: 250px;
     display: flex;
     flex-flow: column wrap;

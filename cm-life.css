@@ -10,13 +10,15 @@ header {
     background-color: rgb(6, 205, 219);   
 }
 #container-topo {
-    width: 1024px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 #home img {
    width: 100px;
+   position: relative;
+   left: 10px;
 }
 
 #home a {
@@ -25,6 +27,8 @@ header {
 
 #container-menu-nav ul {
     list-style-type: none;
+    position: relative;
+    right: 10px;
     display: flex;
     flex-flow: row wrap;
 }
