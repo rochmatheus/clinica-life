@@ -172,3 +172,7 @@ footer img {
 #conteudo-footer a:hover {
     color: orange;
 }
+
+@media (max-width: 867px) {
+    .imagem-especialidade {display: none;}
+}
