@@ -27,11 +27,10 @@ header {
     position: relative;
     right: 10px;
     display: flex;
-    flex-flow: row wrap;
 }
 
-#container-menu-nav ul li{
-    padding-left: 15px;
+#container-menu-nav ul li:not(:last-child) {
+    padding-right: 15px;
 }
 
 #container-menu-nav a {
@@ -47,15 +46,18 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;  
+    align-items: center;  
     height: 70px; 
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .links-especialidades {
     text-decoration: none;
     font-size: 18px;
-    margin-right: 10px;
+    margin-right: 15px;
+    color: rgb(95, 95, 95);
     border-bottom: solid rgb(6, 205, 219);
 }
 
@@ -133,7 +135,6 @@ tbody tr:nth-child(odd) {
 footer {
     display: flex;
     flex-flow: column wrap;
-    justify-content: right;
     background-color: rgb(6, 205, 219);
     width: 100%;
     height: 250px;
@@ -149,18 +150,15 @@ footer img {
     position: relative;
     bottom: 10px;
     color: white;
-    width: 100%;
     height: 250px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
 }
 
 #conteudo-footer p {
-    height: 15px;
     margin-bottom: 0px;
 }
 
@@ -179,12 +177,17 @@ footer img {
 
 @media (max-width: 867px) {
     .imagem-especialidade {display: none;}
+    .descricao-especialidade {width: 60%;}
+    #container-especialidades-links {display: flex; flex-flow: row wrap; margin-top: 15px;}
 }
 
 @media (max-width: 432px) {
     #conteudo-footer p {text-align: center; height: 30px;}
+    .descricao-especialidade {width: 70%;}
 }
 
-@media (max-width: 410px) {
-    #container-especialidades-links {display: flex; flex-flow: row wrap;}
+@media (max-width: 380px) {
+    header {display: block; height: 80px;}
+    #home {display: flex; justify-content: center; height: 55%; border-bottom: solid white 1px}
+    #container-menu-nav {display: flex; justify-content: center; align-items: center; height: 45%;}
 }

@@ -5,14 +5,10 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(6, 205, 219);   
-}
-#container-topo {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: rgb(6, 205, 219);   
 }
 
 #home img {
@@ -30,11 +26,10 @@ header {
     position: relative;
     right: 10px;
     display: flex;
-    flex-flow: row wrap;
 }
 
-#container-menu-nav ul li{
-    padding-left: 15px;
+#container-menu-nav ul li:not(:last-child) {
+    padding-right: 15px;
 }
 
 #container-menu-nav a {
@@ -60,6 +55,7 @@ header {
 
 #sobre-container-principal {
     width: 1024px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -72,16 +68,22 @@ header {
 }
 
 #sobre-parte-2 {
-    height: 250px;
     width: 60%;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     top: 30px;
 }
 
+#container-foto-e-lista {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
 #sobre-parte-2 h3 {
-    text-align: left;
+    text-align: center;
     position: relative;
     top: 20px;
 }
@@ -90,7 +92,12 @@ header {
     float: right;
     top: 20px;
     text-align: left;
-    right: 20px;
+    font-weight: bold;
+    right: 20px;   
+}
+
+#sobre-parte-2 ul li:not(:last-child) {
+    margin-bottom: 5px;
 }
 
 #sobre-parte-2 img {
@@ -100,8 +107,7 @@ header {
 
 #especialidades-container-principal {
     width: 1024px;
-    height: 460px;
-    margin-top: 85px;
+    margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -111,10 +117,10 @@ header {
     width: 60%;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 30px;
 }
 
 #apresentacao-especialidades-parte-2 {
-    height: 500px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -145,7 +151,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 190px;
+    margin-top: 40px;
     width: 150px;
     height: 40px;
     margin-right: auto;
@@ -159,6 +165,10 @@ header {
 
 #limitador-section-final {
     height: 460px;
+}
+
+#limitador-section-contato {
+    margin-top: 40px;
 }
 
 #contato-e-endereco {
@@ -187,7 +197,6 @@ iframe {
 footer {
     display: flex;
     flex-flow: column wrap;
-    justify-content: right;
     background-color: rgb(6, 205, 219);
     width: 100%;
     height: 250px;
@@ -203,18 +212,15 @@ footer img {
     position: relative;
     bottom: 10px;
     color: white;
-    width: 1024px;
     height: 250px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
 }
 
 #conteudo-footer p {
-    height: 15px;
     margin-bottom: 0px;
 }
 
@@ -240,10 +246,52 @@ footer img {
     #conteudo-footer {width: 100%;}
 }
 
+@media (max-width: 870px) {
+    #apresentacao-especialidades-parte-2 {display: flex; justify-content: space-around;}
+}
+
 @media (max-width: 768px) {
     body {width: 100%;}
+    #container-foto-e-lista {display: flex; flex-direction: column;}
+    #container-foto-e-lista img {display: none;}
+    #container-foto-e-lista ul {top: 0px; left: 0px;}
+    #container-foto-e-lista ul li:not(:last-child) {padding-bottom: 25px;}
+    #especialidades-container-principal {margin-top: 80px;}
+}
+
+@media (max-width: 680px) {
+    #banner {height: 300px;}
+    h1 {font-size: 32px;}
+}
+
+@media (max-width: 520px) {
+    #banner {height: 250px;}
+    h1 {font-size: 24px;}
+    h2 {font-size: 20px;}
+    #sobre-parte-1 {width: 100%;}
+    #apresentacao-especialidades-parte-1 {width: 100%;}
+}
+
+@media (width: 431px) {
+    #banner {height: 220px;}
+    #conteudo-footer :nth-child(3) {text-align: center;}
 }
 
 @media (max-width: 425px) {
     body {width: 100%;}
+}
+
+@media (max-width: 380px) {
+    header {display: block; height: 80px;}
+    #home {display: flex; justify-content: center; height: 55%; border-bottom: solid white 1px}
+    #container-menu-nav {display: flex; justify-content: center; align-items: center; height: 45%;}
+    #banner {height: 220px;}
+    h1 {font-size: 22px;}
+}
+
+@media (max-width: 320px) {
+    #banner {height: 200px;}
+    #sobre-parte-2{width: 100%;}
+    h1 {font-size: 18px}
+    h2 {font-size: 18px;}
 }
